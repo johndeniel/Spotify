@@ -10,6 +10,6 @@ pub fn app() -> Router {
 }
 
 async fn serve_html() -> impl IntoResponse {
-    let html_content = fs::read_to_string("src/static/index.html").unwrap();
+    let html_content = fs::read_to_string("/usr/local/bin/static/index.html").unwrap();
     Html(html_content)
 }

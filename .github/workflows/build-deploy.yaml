@@ -28,3 +28,7 @@ jobs:
           context: .
           push: true
           tags: ${{ secrets.DOCKER_HUB_USERNAME }}/spotify:build-v1.001
+          secrets: |
+            SPOTIFY_CLIENT_ID=${{ secrets.SPOTIFY_CLIENT_ID }}
+            SPOTIFY_CLIENT_SECRET=${{ secrets.SPOTIFY_CLIENT_SECRET }}
+            SPOTIFY_PLAYLIST_ID=${{ secrets.SPOTIFY_PLAYLIST_ID }}
